@@ -5,11 +5,9 @@
 import Foundation
 
 func repeatOperation(count: Int, operation: @autoclosure () -> Void) {
-    
     for _ in 0..<count {
         operation()
     }
-    
 }
 
 repeatOperation(count: 5, operation: print("გამარჯობა"))

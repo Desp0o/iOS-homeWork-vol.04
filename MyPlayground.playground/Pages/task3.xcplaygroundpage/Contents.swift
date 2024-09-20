@@ -5,7 +5,7 @@
 import Foundation
 
 func isEven(number: Int) -> Bool {
-   return number % 2 == 0 ? true : false
+   number % 2 == 0
 }
 
 isEven(number: 10)

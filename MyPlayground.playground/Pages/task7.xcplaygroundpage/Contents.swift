@@ -7,10 +7,7 @@ import Foundation
 let pi = 3.14
 
 func calculateCircleArea(radius: Double) {
-    
-    let circleRadius = radius * pi
-    
-    print(circleRadius)
+    print(radius * radius * pi)
 }
 
 calculateCircleArea(radius: 13)

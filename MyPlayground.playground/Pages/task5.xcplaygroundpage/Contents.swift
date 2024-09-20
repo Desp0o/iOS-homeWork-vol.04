@@ -5,10 +5,7 @@
 import Foundation
 
 func calculateTax(price: Double, taxRate: Double) -> Double {
-    
-    var tax = price * taxRate / 100
-    
-    return tax
+    price * taxRate / 100
 }
 
 calculateTax(price: 10.2, taxRate: 18)

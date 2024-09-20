@@ -10,23 +10,10 @@ var myClosure = {
     print("ოპერაცია დასრულდა")
 }
 
-func performOperation(operation: @escaping () -> Void) {
+func performOperation(operation: () -> Void) {
     print("ოპერაცია დაიწყო")
     operation()
 }
 
 performOperation(operation: myClosure)
 
-
-// ------
-print("\n")
-// ------
-
-func secondPerformOperation(operation: @autoclosure @escaping () -> Void) {
-    print("ოპერაცია დაიწყო")
-    operation()
-}
-
-secondPerformOperation(operation: print("ოპერაცია დასრულდა"))
-
-//: [Next](@next)

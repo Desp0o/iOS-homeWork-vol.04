@@ -6,10 +6,8 @@ import Foundation
 
 func repeatString(text: String, count: Int) -> String {
     var finalString = ""
-    var num = 1
-    
-    while num <= count {
-        num += 1
+
+    for _ in 0..<count {
         finalString += text
     }
     

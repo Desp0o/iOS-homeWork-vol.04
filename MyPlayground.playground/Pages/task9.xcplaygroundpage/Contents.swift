@@ -5,19 +5,19 @@
 import Foundation
 
 let sumClosure: (Int, Int) -> Int = { num1, num2 in
-    return num1 + num2
+    num1 + num2
 }
 
 let multipleClosure: (Int, Int) -> Int = { num1, num2 in
-    return num1 * num2
+    num1 * num2
 }
 
 let substractClosure: (Int, Int) -> Int = {num1, num2 in
-    return num1 - num2
+    num1 - num2
 }
 
 func applyOperation(num1: Int, num2: Int, closure: (Int, Int) -> Int) -> Int {
-    return closure(num1, num2)
+    closure(num1, num2)
 }
 
 print(applyOperation(num1: 2, num2: 2, closure: sumClosure))
